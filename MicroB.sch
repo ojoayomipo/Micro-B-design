@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MicroB-rescue:ATmega328P-PU-MCU_Microchip_ATmega U2
+L MCU_Microchip_ATmega:ATmega328P-PU U2
 U 1 1 5CF2E750
 P 5700 4050
 F 0 "U2" H 5056 4096 50  0000 R CNN
@@ -352,9 +352,6 @@ Wire Wire Line
 	8150 3750 6300 3750
 Wire Wire Line
 	8150 3650 5700 3650
-Connection ~ 5700 5550
-Wire Wire Line
-	5700 5550 5700 5700
 $Comp
 L Connector:Conn_01x06_Female J3
 U 1 1 5CF52294
@@ -413,8 +410,6 @@ Wire Wire Line
 	6300 4900 6300 4950
 Wire Wire Line
 	8200 5100 5700 5100
-Wire Wire Line
-	5700 5100 5700 5550
 Connection ~ 5700 5100
 Wire Wire Line
 	5700 3650 5700 5100
@@ -645,4 +640,6 @@ F 3 "~" H 4150 3000 50  0001 C CNN
 	1    4150 3000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5700 5100 5700 5700
 $EndSCHEMATC
